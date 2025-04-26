@@ -23,8 +23,6 @@ async function GetGames(){
   }catch(err){
     throw new Error ("failed to fetch data")
   }
-
-
 }
 // TEM QUE SER ASICRONA PORQUE A FUNÇAO DE PEGAR A API É ASSICRONA
 export default async function Home() {

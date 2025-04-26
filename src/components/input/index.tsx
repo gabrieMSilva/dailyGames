@@ -13,9 +13,11 @@ export function Input(){
     function HandlerSubmit(e : FormEvent){
         e.preventDefault();
 
-        if(input === "") return;
-
-        router.push(`/games/search/${input}`)
+        if(input === ""){
+            alert("Digite algum jogo");
+            return;     
+        }
+        router.push(`/game/search/${input}`)
     }
 
 
@@ -32,7 +34,7 @@ export function Input(){
                 className='bg-slate-200 outline-none w-11/12'
             />
             <button>
-                <FaSearch size={24} color='#ea580c'/>
+                <FaSearch size={24} color='#ea580c' className='cursor-pointer'/>
             </button>
         </form>
     )
