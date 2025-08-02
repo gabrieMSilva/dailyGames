@@ -20,6 +20,9 @@ export function Header(){
                     <Link href="/profile">
                         Perfil
                     </Link>
+                    <Link>
+                        Settings
+                    </Link>
                 </nav>
 
                 <div className="hidden sm:flex justify-center items-center">

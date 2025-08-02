@@ -1,11 +1,17 @@
+import { Container } from "@/components/container";
 
 
 
 
 export default function Profile(){
+    const nome = "Gabriel"
+
+
     return(
-        <div>
-            <h1 className="text-bold text-2xl">Perfil</h1>
-        </div>
+        <Container>
+            <section>
+                <h2>Bem vindo...{nome}</h2>
+            </section>
+        </Container>
     )
 }
